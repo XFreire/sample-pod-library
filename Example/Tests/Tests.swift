@@ -15,7 +15,7 @@ class Tests: XCTestCase {
     }
     
     func testNotNil() {
-        XCTAssertNotNil(nil)
+        XCTAssertNotNil(1)
     }
     
 }
