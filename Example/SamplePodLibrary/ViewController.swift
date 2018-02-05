@@ -13,7 +13,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Speaker().sayHello()
+        let message = Speaker().sayHello()
+        print(message)
     }
 
 }
