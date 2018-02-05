@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode9.2
 
 script:
-    - bundle update fastlane
+    - gem install fastlane --no-ri --no-rdoc --no-document
     - cd Example
     - pod install 
     - fastlane tests
