@@ -5,4 +5,4 @@ script:
     - gem install fastlane --no-ri --no-rdoc --no-document
     - cd Example
     - pod install 
-    - fastlane tests
+    - fastlane test
