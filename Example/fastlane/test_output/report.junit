@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='SamplePodLibrary_Tests.xctest' tests='1' failures='1'>
+  <testsuite name='SamplePodLibrary_Tests.Tests' tests='1' failures='1'>
+    <testcase classname='SamplePodLibrary_Tests.Tests' name='testNotNil'>
+      <failure message='XCTAssertNotNil failed - '>Tests/Tests.swift:18</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,8 @@
+app_identifier "org.cocoapods.demo.SamplePodLibrary-Example" # The bundle identifier of your app
+apple_id "xandrefreire@gmail.com" # Your Apple email address
+
+itc_team_id "88849822" # iTunes Connect Team ID
+team_id "5S2A8F5M3G" # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
