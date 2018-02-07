@@ -13,14 +13,32 @@ default_platform(:ios)
 
 platform :ios do
 
+  desc "Test"
   lane :test do
     run_tests(scheme: "SamplePodLibrary-Example")
   end
 
+  desc "Build"
+  lane :build do 
+  	xcodebuild(
+    	scheme: "SamplePodLibrary",
+    	configuration: "Release",
+    	clean: true,
+    	build: true
+	)
+  end
+
+  desc "Run tests and build"
+  lane :test_and_build do 
+  	test 
+  	build 
+  end
 
   desc "Push a new beta build to TestFlight"
   lane :beta do
     build_app(workspace: "SamplePodLibrary.xcworkspace", scheme: "SamplePodLibrary-Example")
     upload_to_testflight
   end
+
+
 end

@@ -112,8 +112,6 @@
         <section id="counters">
           <h2 id="test-count"><span class="number">1</span> tests</h2>
           
-            <h2 id="fail-count"><span class="number">1</span> failures</h2>
-          
         </section>
         <section id="segment-bar">
           <a id="all-segment" onclick="selectSegment(this);" class="selected">All</a><a id="failing-segment" onclick="selectSegment(this);">Failing</a><a id="passing-segment" onclick="selectSegment(this);">Passing</a>
@@ -123,7 +121,7 @@
     <section id="test-suites">
       
         
-        <section class="test-suite failing" id="SamplePodLibrary_Tests.Tests">
+        <section class="test-suite passing" id="SamplePodLibrary_Tests.Tests">
           <section class="heading" onclick="toggleTests(this);">
             <h3 class="title">SamplePodLibrary_Tests.Tests</h3>
           </section>
@@ -131,29 +129,14 @@
             <table>
             
               
-              <tr class="test failing "  onclick="toggleDetails('testNotNil');">
+              <tr class="test passing "  onclick="toggleDetails('testNotNil');">
                 <td>
+                  
+                    <h3 class="time">0.001s</h3>
                   
                 </td>
                 <td><h3 class="title">testNotNil</h3></td>
               </tr>
-              
-                <tr class="details failing testNotNil">
-                  <td></td>
-                  <td>
-                    
-                      <section class="test-detail reason">XCTAssertNotNil failed - </section>
-                    
-                    
-                      <section class="test-detail snippet">    <span class="kd">func</span> <span class="nf">testNotNil</span><span class="p">()</span> <span class="p">{</span>
-        <span class="kt">XCTAssertNotNil</span><span class="p">(</span><span class="kc">nil</span><span class="p">)</span>
-    <span class="p">}</span>
-</section>
-                      <section class="test-detail">/Users/a.freire/Development/travis-ci-test/SamplePodLibrary/Example/Tests/Tests.swift:18</section>
-                    
-                    
-                  </td>
-                </tr>
               
             
             </table>
